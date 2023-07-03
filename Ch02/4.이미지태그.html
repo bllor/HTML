@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>4.이미지태그</title>
+        <!--
+            날짜: 2023/07/03
+            이름: 최동일
+            내용: HTML 이미지 태그 실습하기
+
+            경로지정
+            /  : 루트 디렉터리(절대경로)
+            ./ : 현재 디렉터리(상대경로),생략가능
+            ../: 상위 디렉터리(상대경로)로 이동
+        -->
+    </head>
+    <!--"."은 현재 폴더의 위치를 나타냄
+        "../"을 하면 현재 파일의 상위 폴더로 이동하게 됨.
+        "/"를하게 되면 최상단폴더 root로 이동하게 됨(절대경로)-->
+    <body>
+        <h3>이미지태그</h3>
+        <img src="./images/flower1.jpg" alt="벚꽃"/>
+        
+        <img src="images/flower2.jpg" alt="코스모스"/>
+        
+        <img src="../Ch01/images/flower3.jpg" alt="튤립" width="150">
+        <img src="/Ch01/images/flower4.jpg" alt="해바라기" width="150">
+    </body>
+</html>
