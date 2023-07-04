@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CSS구조선택자</title>
+        <style>
+            /* 구조선택자*/
+            /* 서울을 선택하려고 할때, li, 클래스 값으로 선택하기에는 너무 많이 선택된다.
+               서울은 city중에 첫째 
+            */
+            .city > li:first-child{
+                color: orange;
+            }
+            .city> li:nth-child(2) {/* nth-child(2)를 하면 city의 둘 째인 대전이 선택된다. */
+                color: green;
+            }
+            
+            .city> li:nth-child(4) {
+                color: aqua;
+            }
+            
+            .city>em:nth-child(5) { background-color: yellow;}
+            .city>em:nth-of-type(2) { background-color: blue;}
+            
+            ul:nth-child(3) > li:nth-child(2){ background-color: violet;}
+
+            /* */
+
+
+        </style>
+    
+    </head>
+    <body>
+        <H3>CSS구조선택자</H3>
+        <UL class="city">
+            <LI>서울</LI>
+            <LI>대전</LI>
+            <LI>대구</LI>
+            <LI>부산</LI>
+            <em>광주</em>
+            <em>인천</em>
+            <em>세종</em>
+        </UL>
+
+        <ul>
+            <li>한국</li>
+            <li>미국</li>
+            <li>중국</li>
+            <li>일본</li>
+            <li>호주</li>
+        </ul>
+    </body>
+</html>
