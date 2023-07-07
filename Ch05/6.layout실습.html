@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>6.layout실습</title>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        a{
+            text-decoration: none; color: black;
+        }
+    #container{
+        width: 860px;
+        height: auto;
+        background-color: #aaa;
+        padding: 10px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    header{
+        width: 100%;
+        height: 120px;
+        background-color: #ccc;
+    }    
+    main{
+       
+        width: 100%;
+        height: auto;
+        background-color: #ccc;
+        margin: 10px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    main>aside:nth-of-type(1){
+        float: left;
+        width: 200px;
+        height: 400px;
+        background-color: #eee;
+        
+        
+    }
+    
+    main>aside:nth-of-type(2){
+        float: left;
+        width: 200px;
+        height: 400px;
+        background-color: #eee;
+        margin: 0 10px;
+    }
+
+    main>section{
+        float: left;
+        width: 400px;
+        height: 400px;
+        background-color: #eee;
+    }
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: #ccc;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h3>Header</h3>
+        </header>
+        <main>
+            <h3>Main</h3>
+            <aside>
+                <H3>Aside#1</H3>
+            </aside>
+            <aside>
+                <h3>Aside#2</h3>
+            </aside>
+            <section>
+                <h3>Section</h3>
+            </section>
+        </main>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </div>
+</body>
+</html>
