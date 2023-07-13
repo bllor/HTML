@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>EcoMarket</title>
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+                font: normal 12px '돋움';
+        }
+        ul,ol{list-style: none;}
+        a{text-decoration: none;color: #111;}
+        
+        #container{
+                width: 100%;
+                height: auto;
+                border: 1px solid red;
+                box-sizing: border-box;
+        }
+        /* 헤더 */
+        header{
+            width: 100%;
+            height: 200px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        header>div{
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        header>div:nth-child(1){width: 100%; height: 44px;}
+        header>div:nth-child(2){width: 100%; height: 110px;}
+        header>div:nth-child(3){width: 100%; height: 46px;}
+
+        header>div>div{
+            width: 1126px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        header>div>section{
+            width: 1126px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }      
+        header>div>nav{
+            width: 1126px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+        /* 메인 */
+        main{
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        main>section{
+            border: 1px solid green;
+            box-sizing: border-box;
+            padding: 40px 0;
+        }
+        main>section>article{
+            width: 1126px;
+            margin: 0 auto;
+            border: 1px solid orange;
+        }
+        .banner{
+            width: 100%;
+            height: 480px;
+        }
+        .banner>article{
+            
+            height: 392px;
+        } 
+          
+        .new{
+            width: 100%;
+            height: 566px;
+        }
+
+        .new>article{
+            height: 480px;
+        }
+        .new>article>div{
+            float: left;
+            border: 1px solid pink;
+            box-sizing: border-box;
+        }
+        .new>article>div:nth-child(1){
+            
+            width: 432px;
+            height: 100%;
+        }   
+        .new>article>div:nth-child(2){
+            float: left;
+            width: 345px;
+            height: 50%;
+           
+        }   
+        .new>article>div:nth-child(3){
+           
+            width: 345px;
+            height: 50%;
+            
+        }
+        .new>article>div:nth-child(4){
+            clear: right;
+            width: 345px;
+            height: 50%;
+        } 
+        .new>article>div:nth-child(5){
+            width: 345px;
+            height: 50%;
+        } 
+        .master{
+            
+            width: 100%;
+            height: 620px;
+
+        }
+        .master>article{
+            height: 532px;
+        }
+        .master>article>div{
+            float: left;
+            border: 1px solid pink;
+            box-sizing: border-box;
+            width: 281px;
+            height: 334px;
+        }
+
+
+
+        .organic_banner{
+            width: 100%;
+            height: 220px;
+        }
+        
+        .organic{
+            width: 100%;
+            height: 892px;
+        }
+        .organic>article{
+            height: 800px;
+
+        }
+
+
+        .organic>article>div{
+            float: left;
+            border: 1px solid pink;
+            box-sizing: border-box;
+            width: 281px;
+            height: 400px;
+        }
+        .organic>article>div:nth-child(5){
+            clear: left;
+        }
+
+        .grain_banner{
+            width: 100%;
+            height: 220px;
+        }
+        .grain{
+            width: 100%;
+            height: 892px;
+        }
+        .grain>article{
+            height: 800px;
+        }
+        .grain>article>div{
+            float: left;
+            border: 1px solid pink;
+            box-sizing: border-box;
+            width: 281px;
+            height: 400px;
+        }
+        .grain>article>div:nth-child(5){
+            clear: left;
+        }
+
+        
+        /* 푸터 */
+        footer{
+            width: 100%;
+            height: 200px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        footer>div{
+            width: 1126px;
+            height: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+
+    </style>
+
+</head>
+    <body>
+        <div id="container">
+            <header>
+                <div >
+                    <div></div>
+                </div>
+                <div >
+                    <section></section>
+                </div>
+                <div >
+                    <nav></nav>
+                </div>
+            </header>
+            <main>
+                <section class="banner">
+                    <article></article>
+                </section>
+                <section class="new">
+                    <article>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </article>
+                </section>
+                <section class="master">
+                    <article>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </article>
+                </section>
+                <section class="organic_banner">
+                    
+                </section>
+                <section class="organic">
+                    <article>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </article>
+                </section>
+                <section class="grain_banner">
+                   
+                </section>
+                <section class="grain">
+                    <article>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <div></div>
+            </footer>
+        </div>    
+    </body>
+</html>
