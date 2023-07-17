@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{list-style: none;}
+a{text-decoration: none; color: black;}
+
+
+#container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #0077cc;
+
+    
+}
+
+
+
+header > .logo{
+
+    float: left;
+    font-family: 'Merienda';
+    color: #fff;
+    text-shadow: 0 -1px 0 #222;
+    font-size: 20px;
+    margin: 16px;
+
+
+
+}
+header>nav{
+    position: relative;
+    float: right;
+    width: 900px;
+    height: 100px;
+    
+
+}
+header>nav>ul{
+    position: absolute; left: 0; bottom: 0;
+}
+header>nav>ul>li{
+    float: left;
+    width: 200px;
+    height: 60px;
+    
+}
+header>nav>ul>li>a{
+    /*  a 태그는 인라인이라서 크기 못가짐 block으로 만들어줌*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+header>nav>ul>li>a:hover{color: black;}
+header>nav>ul span{
+    margin-left: 10px;
+}
+
+header>nav ol{
+    display: none;
+}
+header>nav ol> li{}
+header>nav ol> li >a {}
+
+#contents{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+#slideshow{
+    width:  100%;
+    height: 300px;
+    position: relative;
+
+   
+}
+
+#slideshow>section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+#slideshow>section>img{
+    position: absolute;
+}
+
+#slideshow>section>img:nth-child(1){left: 0; top: 0;}
+#slideshow>section>img:nth-child(2){left: 100%; top: 0;}
+#slideshow>section>img:nth-child(3){left: 200%; top: 0;}
+#slideshow>button{
+    position: absolute;
+    padding: 20px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+#slideshow>button.left{
+    left: 0; top: 0;
+}
+#slideshow>button.right{
+   right: 0; top:0;
+}
+#slideshow>button:hover{
+    background-color: #222;
+    opacity: 0.5;
+    cursor: pointer;
+    color: #fff;
+} 
+#tabMenu{
+    padding-top: 20px;
+    float: left;
+    width:  600px;
+    height: 300px;
+    
+ 
+}
+
+#tabMenu > label{
+    display: inline-block;
+     border: 1px solid #ddd;
+    padding: 15px 25px;
+    background: #eee;
+    color: #aaa;
+    font-weight: bold;
+    cursor: pointer;
+}
+#tabMenu > label>input[type=radio]{
+    display: none;
+}
+#tabMenu > label:first-child{
+    color:#bb0000;
+}
+#tabMenu > section{
+    position: relative;
+    width: 100%;
+    height: 246px;
+    border-top: 1px solid #ddd;
+    
+}
+#tabMenu > section>article{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+#tabMenu > section >article.on{display: block;}
+
+#tabMenu > section ul{
+    list-style: disc;
+    margin-left: 36px;
+    margin-top: 36px;
+}
+#tabMenu > section ul>li{
+    margin-bottom: 12px;
+}
+#tabMenu > section ul>li>a{
+
+    font-size: 16px;
+    font-weight: ;
+
+}
+#tabMenu > section ol{}
+#tabMenu > section ol>li{}
+#tabMenu > section ol>li>a{}
+#tabMenu > section ol img{}
+
+
+
+#links{
+    float: left;
+    width:  600px;
+    height: 300px;
+    
+    }
+
+#links>ul{
+    width: 100%;
+    height: 100%;
+    
+
+}   
+#links>ul>li{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    
+}   
+#links>ul a{}   
+#links>ul span{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 75px;
+    margin: 26px auto;
+}
+
+#links> ul span.icon1 {background-image: url('../images/icon-1.jpg');}
+#links> ul span.icon2 {background-image: url('../images/icon-2.jpg');}
+#links> ul span.icon3 {background-image: url('../images/icon-3.jpg');}
+#links> ul h3{
+    text-align: center;
+    font-size: 16px;
+}   
+
+main{
+    width:  100%;
+    height: auto;
+   
+    
+}
+footer{
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid #222;  
+}
+#bottomMenus{
+    width: 100%;
+    height: 20px;
+    float: left;
+    display: inline;
+    border-left: 1px solid black;
+    padding: 20px;
+
+}
+#bottomMenus li:nth-child(1){ float: left;}
+#bottomMenus li:nth-child(2){
+     float: left;
+    margin: 0 10px;
+    
+}
+#bottomMenus li:nth-child(3){
+     float: left;
+     margin: 0 10px;
+     
+    }
+#bottomMenus li:nth-child(4){ float: left;}
+
+#sns>ul>li:nth-child(2){
+    float: right;
+}
+#sns>ul>li:nth-child(3){
+    float: right;
+}
+#company{
+    clear: both;
+}
