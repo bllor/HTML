@@ -147,7 +147,7 @@ header>nav ol> li >a {}
 #tabMenu > label>input[type=radio]{
     display: none;
 }
-#tabMenu > label:first-child{
+#tabMenu > label.on{
     color:#bb0000;
 }
 #tabMenu > section{
@@ -261,6 +261,9 @@ footer{
     }
 #bottomMenus li:nth-child(4){ float: left;}
 
+#sns>ul>li:nth-child(1){
+    float: right;
+}
 #sns>ul>li:nth-child(2){
     float: right;
 }
