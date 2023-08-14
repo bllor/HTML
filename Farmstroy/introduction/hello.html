@@ -4,54 +4,6 @@
     <meta charset="UTF-8">
     <title>팜스토리::인삿말</title>
    <link rel="stylesheet" href="../css/style.css">
-   <style>
-    /* 서브페이지 공통 */
-    #sub{
-        width: 100%;
-        height: auto;
-        border: 1px solid black;
-    }
-    #sub > .bg {
-        width: 100%;
-        height: 184px;
-        background-image: url('../images/sub_top_bg.jpg');
-        position: relative;
-    }
-
-    #sub > .bg> img{
-        position: absolute;
-        left: 16px;
-        bottom: 16px;
-    }
-    #sub > section{
-       
-        width: 100%;
-        height: auto;
-        border: 1px solid blue;
-        overflow: hidden;
-    }
-    #sub > section > aside{
-        float: left;
-        width: 180px;
-        height: 650px;
-        border: 1px solid green;
-        box-sizing: border-box;
-
-    }
-    #sub > section > article{
-        float: left;
-        width: 800px;
-        min-height: 650px;
-        /* 일단 최소크기를 650으로 잡고 컨텐츠의 길이에 따라서 늘어남 */
-        border: 1px solid green;
-        box-sizing: border-box;
-    }
-    /*  팜스토리 소개 */
-    /*  장보기 */
-    /*  농작물 이야기 */
-    /*  이벤트 */
-    /*  커뮤니티 */
-   </style>
 </head>
 <body>
     <div id ="container">
@@ -75,9 +27,25 @@
         </header>
         <div id="sub">
             <div class="bg"><img src="../images/sub_top_tit1.png" alt="introduction"></div>
-            <section>
-                <aside></aside>
-                <article></article>
+            <section class="introduction">
+                <aside>
+                    <img src="../images/sub_aside_cate1_tit.png" alt="팜스토리소개">
+                    <ol class="lnb">
+                        <li class="on"><a href="#">인사말</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                    </ol>
+                </aside>
+                <article class="content">
+                    <nav >
+                        <img src="../images/sub_nav_tit_cate1_tit1.png" alt="인사말">
+                        <p>
+                            HOME> 팜스토리> 팜스토리소개> <strong>인사말</strong>
+                        </p>
+                    </nav>
+                    <!-- 컨텐츠 시작-->
+                     인사말 페이지 입니다.
+                    <!-- 컨텐츠 끝-->
+                </article>
             </section>
         </div>
         <footer>
