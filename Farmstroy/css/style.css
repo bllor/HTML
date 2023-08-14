@@ -1,0 +1,260 @@
+ /* 초기화 */
+ *{
+    margin: 0;
+    padding: 0;
+    font: normal 12px '돋움';
+}
+
+ul,ol{list-style:  none;}
+a{text-decoration: none; color: black;}
+input,textarea{outline: none;}
+
+#container{
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+
+/* 헤더 */
+header{
+    width: 100%;
+    height: 142px;
+    background-image: url("../images/head_top_line.png");
+    background-repeat: no-repeat;
+    position: relative;   
+}
+
+header > .logo{
+   position: absolute;
+   left: 50%;
+   top: 20px;
+   margin-left: -95px;
+
+}
+header > p{
+    margin-top: 16px;
+    float: right;
+}
+header > p > a{
+   
+}
+header > img{
+    float: right;
+    clear: right;
+    margin-top: 24px;
+}
+header > .gnb{
+    width: 100%;
+    height: 50px;
+  
+   /* 
+    float: right;
+    clear: both;
+    */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header > .gnb > li{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-image: url("../images/head_menu_line.png");
+    background-repeat: no-repeat;
+    background-position: 0 -8px;
+}
+header > .gnb > li >a {
+    display: block;
+    /* a태그는 크기를 가질 수 없어서 지정해줘야함 */
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position:  0 6px;
+    /* background-position:  0 6px; 0축 0 y축으로 6px 내려옴 */
+    font-size: 0;
+    position: relative;
+    
+}
+
+header> .gnb > li > a > .badge{
+    position: absolute;
+    right: 50px;
+    top: -20px;
+}
+
+header > .gnb > li:nth-child(1)> a {background-image: url('../images/head_menu1.png');}
+header > .gnb > li:nth-child(2)> a {background-image: url('../images/head_menu2.png');}
+header > .gnb > li:nth-child(3)> a {background-image: url('../images/head_menu3.png');}
+header > .gnb > li:nth-child(4)> a {background-image: url('../images/head_menu4.png');}
+header > .gnb > li:nth-child(5)> a {background-image: url('../images/head_menu5.png');}
+
+/* 상태 선택자 */
+
+header > .gnb > li:nth-child(1)> a:hover {background-image: url('../images/head_menu1_ov.png');}
+header > .gnb > li:nth-child(2)> a:hover {background-image: url('../images/head_menu2_ov.png');}
+header > .gnb > li:nth-child(3)> a:hover {background-image: url('../images/head_menu3_ov.png');}
+header > .gnb > li:nth-child(4)> a:hover {background-image: url('../images/head_menu4_ov.png');}
+header > .gnb > li:nth-child(5)> a:hover {background-image: url('../images/head_menu5_ov.png');}
+
+
+/*
+header > .gnb > li:nth-child(1)> a:hover {background-image: url('../images/head_menu1_ov.png')};
+header > .gnb > li:nth-child(2)> a:hover {background-image: url('../images/head_menu2_ov.png')};
+header > .gnb > li:nth-child(3)> a:hover {background-image: url('../images/head_menu3_ov.png')};
+header > .gnb > li:nth-child(4)> a:hover {background-image: url('../images/head_menu4_ov.png')};
+header > .gnb > li:nth-child(5)> a:hover {background-image: url('../images/head_menu5_ov.png')};
+*/
+
+
+/* 푸터 */
+footer{
+width: 100%;
+height: 120px;
+margin-top: 10px;
+
+
+}
+
+footer > p{
+float: right;
+font-size: 11px;
+margin-top: 26px;
+color: #585858;
+margin-right: 16px;
+line-height: 20px;
+}
+
+footer > p > .copyright{
+font-weight: bold;
+
+}
+
+/* 메인 */
+main{
+    width: 100%;
+    height: auto;
+   
+}
+main> div{
+    width: 100%;
+    border: 1px solid green;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+main> .slider{
+    height: 312px;
+    position: relative;
+}
+
+main> .slider> .slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+main> .slider> .slides >li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+
+main> .slider> .slides >li:nth-child(1) {top: 0; left: 0;}
+main> .slider> .slides >li:nth-child(2) {top: 0; left: 100%;}
+main> .slider> .slides >li:nth-child(3) {top: 0; left: 200%;}
+
+main> .slider>  img{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+main> .slider> .banner {
+    width:  230px;
+    height: 100%;
+    background-image: url('../images/main_banner_bg.jpg');
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+main> .slider> .banner > img:nth-child(1) {
+    float: right;
+    margin: 6px;
+}
+main> .slider> .banner > img:nth-child(2) {
+    margin-left: 10px;
+    margin-top: -10px;
+}
+main> .slider> .banner > img:nth-child(3) {
+    margin-left: 10px;
+}
+
+
+main> .quick{
+    height: 74px;
+}
+
+main > .quick > a {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+main > .quick > a:nth-child(1){background-image: url('../images/main_banner_sub1_bg.jpg');}
+main > .quick > a:nth-child(2){background-image: url('../images/main_banner_sub2_bg.jpg');}
+
+
+
+main> .latest{
+    height: 186px;
+}
+
+main> .latest > article{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+
+main> .latest > article > a{
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+main> .latest > article > img{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+main> .latest > article > table{
+    position: absolute;
+    right: 6px;
+    bottom: 7px;
+}
+main> .latest > article > table  tr{}
+main> .latest > article > table  td{
+    color: #6a6a6a;
+}
+main> .latest > article > table  td > a{
+    color: #6a6a6a;
+}
+main> .latest > article > table  td:nth-child(2){
+    display: block;
+    width: 142px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+
+}
+
+main> .info{
+    height: 154px;
+}
+
