@@ -256,5 +256,44 @@ main> .latest > article > table  td:nth-child(2){
 
 main> .info{
     height: 154px;
+    overflow: hidden;
+    padding: 10px 0;
+    border-top: 2px solid #756c65;
+    box-sizing: border-box;
+}
+
+main > .info > div {
+    float: left;
+    height: 100%;
+}
+
+main > .info > div > .tit{
+    margin-bottom: 16px;
+}
+
+main > .info > div > .tel{overflow: hidden;}
+main > .info > div > .tel > *{
+    float: left;
+    margin-right: 16px;
+}
+main > .info > div > .tel > .time{
+    line-height: 18px;
+    color: #666;
+}
+main > .info > div > .tel{
+    margin-top: 16px;
+
+}
+
+main > .info > div:nth-child(2) {
+    width: 230px;
+    padding-left: 16px;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+main > .info > div > .account{
+    line-height: 18px;
+    color: #666;
 }
 
