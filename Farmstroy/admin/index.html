@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>팜스토리</title>
+    <style>
+         *{
+    margin: 0;
+    padding: 0;
+    font: normal 12px '돋움';
+}
+
+ul,ol{list-style:  none;}
+a{text-decoration: none; color: black;}
+input,textarea{outline: none;}
+
+#container{
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid black;  
+}
+header{
+    width: 100%;
+    height: auto;
+    background-image: url("../images/admin_bg.jpg");
+    position: relative;
+    padding: 12px;
+    box-sizing: border-box;   
+}
+
+header > p{
+    float: right;
+}
+
+header > p >a{
+    color: white;
+}
+
+/* 메인 */
+main{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+main>aside{
+    float: left;
+    width: 176px;
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main > aside > h3{
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: rgb(229, 229, 229);
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 14px;
+}
+main> aside > ul{
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+main> aside > ul> li{
+    line-height: 22px;
+}
+
+main> aside > ul> li.on > a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main> aside > ul> li > a:hover{
+    color: #111;
+    text-decoration: underline;
+}
+
+
+main > section{
+    float: right;
+    width: 804px;
+    min-height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid green;
+}
+
+main > section > nav > h3{
+    font-size: 17px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+main> section> article> h3{
+    margin: 6px 0;
+}
+
+main> section> article> h3> .more{
+    float: right;
+}
+
+main> section> article table{
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 2px solid #333;
+}
+
+main> section> article table tr{
+    border-bottom: 1px dotted #999;
+
+}
+
+main> section> article table tr > th{
+    padding: 12px;
+    background-color: #fbfbfb;
+}
+
+main> section> article table tr > td{
+    padding: 12px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="#" class="logo"><img src="../images/admin_logo.jpg" alt="로고"></a>
+            <p>
+                <a href="#">HOME|</a>
+                <a href="#">로그아웃|</a>
+                <a href="#">고객센터|</a>
+            </p>
+        </header>
+        <main>
+            <aside>
+                <h3>주요기능</h3>
+                <ul>
+                    <li><a href="#">상품관리</a></li>
+                    <li><a href="#">주문관리</a></li>
+                    <li><a href="#">회원관리</a></li>
+                </ul>
+            </aside>
+            <section>
+                <nav>
+                    <h3>관리자 메인</h3>
+                </nav>
+                <article>
+                    <h3>
+                        <a href="#">상품현황</a>
+                        <a href="#" class="more">+더보기</a>
+                    </h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>상품번호</th>
+                                <th>상품명</th>
+                                <th>구분</th>
+                                <th>가격</th>
+                                <th>재고</th>
+                                <th>등록일</th>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>과일</td>
+                                <td>4000원</td>
+                                <td>100</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>과일</td>
+                                <td>4000원</td>
+                                <td>100</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>과일</td>
+                                <td>4000원</td>
+                                <td>100</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">주문현황</a>
+                        <a href="#" class="more">+더보기</a>
+                    </h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>주문번호</th>
+                                <th>상품명</th>
+                                <th>판매가격</th>
+                                <th>수량</th>
+                                <th>배송비</th>
+                                <th>합계</th>
+                                <th>주문자</th>
+                                <th>주문일</th>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>4000원</td>
+                                <td>2개</td>
+                                <td>3000원</td>
+                                <td>합계</td>
+                                <td>홍길동</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>4000원</td>
+                                <td>2개</td>
+                                <td>3000원</td>
+                                <td>합계</td>
+                                <td>홍길동</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>4000원</td>
+                                <td>2개</td>
+                                <td>3000원</td>
+                                <td>합계</td>
+                                <td>홍길동</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">상품현황</a>
+                        <a href="#" class="more">+더보기</a>
+                    </h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>상품번호</th>
+                                <th>상품명</th>
+                                <th>구분</th>
+                                <th>가격</th>
+                                <th>재고</th>
+                                <th>등록일</th>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>과일</td>
+                                <td>4000원</td>
+                                <td>100</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>과일</td>
+                                <td>4000원</td>
+                                <td>100</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                            <tr>
+                                <td>1011</td>
+                                <td>사과</td>
+                                <td>과일</td>
+                                <td>4000원</td>
+                                <td>100</td>
+                                <td>2023-01-01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
